@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+/* リセットcss LP制作コピペ*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ヘッダーフッターの帯のスタイル */
+.logo_nav_Obi {
+  height: 70px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+.site_nav ul {
+  display: flex;
+}
+.site_nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+.site_nav a {
+  color: #f2f2f2;
+}
+.site_nav a:hover {
+ opacity: 80%;
+}
+
+/* ブロック１ */
+#div1 {
+  background: url(img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #f2f2f2;
+  height: 500px;
+  display: flex;
+}
+#div1 h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  position: relative;
+  top: 280px;
+  left: 80px;
+}
+.news_block {
+  height: 50px;
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: black;
+}
+.news_block h2 {
+  color: #f2f2f2;
+  width: 120px;
+  text-align: center;
+  font-size: 12px;
+}
+.news_block div {
+  background-color: #f2f2f2;
+  color: #000;
+  height: 50px;
+}
+.news_title {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 500px;
+  font-size: 14px;
+}
+time {
+  font-size: 12px;
+}
+
+/* ブロック２ */
+#div2 {
+  height: 400px;
+  margin-bottom: 120px;
+  background-color: #000;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+#mission_img {
+  height: 320px;
+  width: auto;
+  position: absolute;
+  right: 8vw;
+  top: 700px;
+}
+.mission_paragraph {
+  z-index: 1;
+  position: relative;
+  left: 20vw;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mission_paragraph h1 {
+  font-size: 18px;
+}
+.mission_paragraph p {
+  width: 600px;
+  font-size: 10px;
+}
+.mission_paragraph a {
+  color: #000
+}
+.mission_paragraph div {
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: fit-content;
+  background-color: #f2f2f2;
+  font-size: 12px;
+}
+
+/* ブロック３ */
+#div3 {
+  background-color: #cccccc;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(70px, auto);
+}
+#div3_h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+}
+#service_div1 {
+  grid-column: 3 / -5;
+  grid-row: 3 / 4 ;
+}
+#right_img {
+  grid-column: 6 / -1;
+  grid-row: 2 / 5;
+}
+#left_img {
+  grid-column: 1 / -6;
+  grid-row: 7 / 10;
+}
+#service_div2 {
+  grid-column: 5 / -3;
+  grid-row: 8 / 9 ;
+}
+#blank {
+  grid-row: 10 / 12;
+}
+.service_div {
+  background-color: #fff;
+  z-index: 1;
+  height: auto;
+  padding: 40px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.service_div h2 {
+  margin: 7px;
+}
+.service_div h3 {
+  margin: 7px;
+}
+.service_div p {
+  margin: 7px;
+}
+.service_div a {
+  margin: 5px;
+  color: #000;
+  align-self: flex-end;
+}
+.service_div div {
+  border: solid 1px #000;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+}
+#div3 img {
+  width: 50vw;
+}
+
+/* ブロック４ */
+#div4 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: #f2f2f2;
+}
+#div4 div {
+  width: 48vw;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+#div4 div h2 {
+  font-size: 10px;
+  margin: 10px;
+}
+#company {
+  background: url(img/company.jpeg);
+}
+#recruit {
+  background: url(img/recruit.jpg);
+}
+
+/* FAQ */
+#FAQ {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  width: 60vw;
+  height: 70px;
+  display: flex;
+  background-color: black;
+  color: #f2f2f2;
+  text-align: center;
+  align-items: center;
+}
+#FAQ h1 {
+  width: 10vw;
+  font-size: 24px;
+}
+#FAQ h2 {
+  width: 50vw;
+  font-size: 10px;
+}
+
+/* ブロック５ */
+#div5 {
+  height: 400px;
+  background: url(img/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#div5 h1 {
+  font-size: 20px;
+}
+#div5 h2 {
+  font-size: 10px;
+  margin: 8px;
+}
+.strong {
+  font-size: 24px;
+  margin: 15px;
+}
+#div5 p {
+  font-size: 9px;
+  margin: 15px;
+}
+#div5 a {
+  color: #f2f2f2;
+}
+#div5 div {
+  font-size: 10px;
+  border: solid 1px #f2f2f2;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.copyright {
+  font-size: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  color: #f2f2f2;
+}
+footer {
+  background-color: black;
+}
